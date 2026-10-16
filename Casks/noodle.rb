@@ -1,8 +1,8 @@
 # Generated from packaging/homebrew/noodle.rb in pcybriwsky/noodle, so edit it there.
 # Each release fills in version and sha256 and pushes the result to pcybriwsky/homebrew-tap.
 cask "noodle" do
-  version "0.1.1"
-  sha256 "57e0066afff68c5d78d0c0722ee74c1e2053a3ac328c4a63a732793f4864581e"
+  version "0.1.2"
+  sha256 "fbb93d1dbc3bff208689b092e57d99a1a9a9f81730f064c3b57e9822c674fd7d"
 
   url "https://github.com/pcybriwsky/noodle/releases/download/v#{version}/Noodle.zip"
   name "Noodle"
@@ -14,12 +14,6 @@ cask "noodle" do
 
   app "Noodle.app"
   binary "#{appdir}/Noodle.app/Contents/Resources/bin/noodle"
-
-  # Ad-hoc signed, not notarized. Without this, Gatekeeper refuses to open it.
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Noodle.app"]
-  end
 
   uninstall_preflight do
     system_command "#{appdir}/Noodle.app/Contents/Resources/bin/noodle",
