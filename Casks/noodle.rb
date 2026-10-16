@@ -1,8 +1,8 @@
 # Generated from packaging/homebrew/noodle.rb in pcybriwsky/noodle, so edit it there.
 # Each release fills in version and sha256 and pushes the result to pcybriwsky/homebrew-tap.
 cask "noodle" do
-  version "0.1.2"
-  sha256 "fbb93d1dbc3bff208689b092e57d99a1a9a9f81730f064c3b57e9822c674fd7d"
+  version "0.1.3"
+  sha256 "b8dab15867ce58436083ffb7034a8fc4b468ef1e0a8eae949949816d8b681481"
 
   url "https://github.com/pcybriwsky/noodle/releases/download/v#{version}/Noodle.zip"
   name "Noodle"
