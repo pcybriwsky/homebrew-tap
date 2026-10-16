@@ -9,7 +9,7 @@ cask "noodle" do
   desc "Desk stretches while Claude Code is working"
   homepage "https://github.com/pcybriwsky/noodle"
 
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
   depends_on formula: "jq"
 
   app "Noodle.app"
