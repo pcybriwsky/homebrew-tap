@@ -1,13 +1,13 @@
 # Generated from packaging/homebrew/noodle.rb in pcybriwsky/noodle, so edit it there.
 # Each release fills in version and sha256 and pushes the result to pcybriwsky/homebrew-tap.
 cask "noodle" do
-  version "0.1.0"
-  sha256 "b61b1eff1250243ffe31745cc97d5c42899121fcd1d265fb6c87782aa0e75448"
+  version "0.1.1"
+  sha256 "57e0066afff68c5d78d0c0722ee74c1e2053a3ac328c4a63a732793f4864581e"
 
   url "https://github.com/pcybriwsky/noodle/releases/download/v#{version}/Noodle.zip"
   name "Noodle"
   desc "Desk stretches while Claude Code is working"
-  homepage "https://github.com/pcybriwsky/noodle"
+  homepage "https://tonitherigatoni.com"
 
   depends_on macos: :ventura
   depends_on formula: "jq"
